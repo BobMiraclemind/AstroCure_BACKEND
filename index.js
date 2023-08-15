@@ -17,6 +17,7 @@ app.use("/user", user_route);
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log("Connected to Database");
+        
     })
     // .catch((error) => {
     //     console.log(error);
@@ -25,7 +26,8 @@ mongoose.connect(process.env.MONGODB_URI)
 // const connectDb = ()=>{
 //     mongoose
 // }
-
 app.listen(process.env.PORT, () => {
-    console.log(`Astrocure app listening on port ${process.env.PORT}`)
+    console.log(`Astrocure app listening on port ${process.env.PORT}`);
 });
+
+
